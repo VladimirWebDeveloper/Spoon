@@ -346,7 +346,7 @@ body {
 }
 
 .footer {
-    padding: 120px 0 175px;
+    padding: 120px 0 120px;
     background-color: #0A0E1A;
     margin: 0 auto;
     max-width: 1460px;
@@ -367,6 +367,11 @@ body {
 
 .copy {
     color: #666;
+}
+
+.mobile__copy {
+    display: none;
+    text-align: center;
 }
 
 .footer__menu {
@@ -439,6 +444,10 @@ body {
 
     .premium__img {
         width: 100%;
+    }
+
+    .footer {
+        padding: 60px 0 30px;
     }
 
     .footer__menu {
@@ -519,11 +528,24 @@ body {
         justify-content: center;
     }
 
+    .mobile__logo {
+        display: inline-block;
+    }
+
+    .logo {
+        display: none;
+    }
+
     .footer__menu {
+        order: -1;
         justify-content: center;
     }
 
     .copy {
-        margin-bottom: 20px;
+        display: none;
     }
-}
+
+    .mobile__copy {
+        padding-top: 60px;
+        display: block;
+    }
