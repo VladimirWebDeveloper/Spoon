@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('../fonts/LibreFranklin-Regular.woff2') format('woff2'),
+        url('../fonts/LibreFranklin-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('../fonts/LibreFranklin-Bold.woff2') format('woff2'),
+        url('../fonts/LibreFranklin-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('../fonts/IBMPlexMono-Regular.woff2') format('woff2'),
+        url('../fonts/IBMPlexMono-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('../fonts/IBMPlexMono-Bold.woff2') format('woff2'),
+        url('../fonts/IBMPlexMono-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #999;
+    background-color: #FAFAFA;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1460px;
+    background-image: url(../images/header_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding: 22px 0 120px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 22px;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 115px;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.menu__link {
+    transition: all .2s;
+}
+
+.menu__link:hover {
+    color: #5ab963;
+}
+
+.dot {
+    display: block;
+    padding-top: 3px;
+}
+
+.login__sign {
+    background-color: transparent;
+    border: none;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.login__sign:hover {
+    color: #5ab963;
+}
+
+.login__started {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 11px 17px;
+    transition: all .2s;
+}
+
+.login__started:hover {
+    color: #5ab963;
+    border: 2px solid #5ab963;
+}
+
+.burger__menu {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+.header__content {
+    text-align: center;
+    color: #fff;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    margin: 0 0 35px;
+}
+
+.text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 185%;
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 187%;
+    background-color: #5ab963;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #fff;
+    width: 160px;
+    height: 60px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    background-color: #e9e9e9;
+    color: #5ab963;
+
+}
+
+.promo {
+    padding: 120px 0;
+}
+
+.promo__desc {
+    font-size: 24px;
+    line-height: 150%;
+    max-width: 510px;
+    margin-bottom: 105px;
+}
+
+.promo__desc b {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+}
+
+.promo__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 229px;
+}
+
+.promo__item {
+    width: 275px;
+}
+
+.promo__img {
+    margin-bottom: 25px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    margin-bottom: 13px;
+}
+
+.promo__text {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.promo__bg {
+    width: 100%;
+    margin-bottom: 115px;
+}
+
+.subdesc {
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+.subdesc b {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+}
+
+.links {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    line-height: 164%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5ab963;
+}
+
+.promo__more {
+    transition: all .2s;
+}
+
+.promo__more:hover {
+    color: #0A0E1A;
+    border-bottom: 1px solid #0A0E1A;
+}
+
+.premium {
+    padding: 120px 0;
+    border-bottom: 1px solid #999;
+}
+
+.premium__box-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.premium__box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+}
+
+.premium__box-text {
+    max-width: 360px;
+    margin: 0 100px;
+}
+
+.premium__subdesc {
+    text-align: left;
+}
+
+.premium__content {
+    text-align: center;
+}
+
+.premium__link {
+    transition: all .2s;
+}
+
+.premium__link:hover {
+    color: #0A0E1A;
+    border-bottom: 1px solid #0A0E1A;
+}
+
+.party {
+    padding: 150px 0;
+}
+
+.party__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.party__text {
+    max-width: 483px;
+}
+
+.party__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5ab963;
+    margin-bottom: 15px;
+}
+
+.party__title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #5ab963;
+    top: 11px;
+    left: 85px;
+}
+
+.party__subdesc {
+    text-align: left;
+}
+
+.footer {
+    padding: 120px 0 175px;
+    background-color: #0A0E1A;
+    margin: 0 auto;
+    max-width: 1460px;
+}
+
+.footer__inner {
+    font-size: 12px;
+    line-height: 150%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__logo-img {
+    margin-bottom: 15px;
+}
+
+.copy {
+    color: #666;
+}
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 65px;
+}
+
+.footer__item {
+    margin-bottom: 25px;
+}
+
+.footer__item {
+    transition: all .2s;
+    padding-left: 18px;
+}
+
+.footer__item:hover {
+    color: #5ab963;
+}
+
+.footer_icons {
+    display: flex;
+}
+
+.footer__icons-link {
+    padding-left: 18px;
+}
+
+
+
+
+@media (max-width: 1090px) {
+
+    .promo {
+        padding: 40px 0;
+    }
+
+    .premium {
+        padding: 30px 0;
+    }
+
+    .premium__img {
+        margin-bottom: 30px;
+        order: -1;
+    }
+
+    .premium__box-1 {
+        margin-bottom: 30px;
+    }
+
+    .premium__box-2 {
+        margin-bottom: 30px;
+    }
+
+    .premium__box-text {
+        margin: 20px;
+    }
+
+    .party {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .promo__item {
+        width: 250px;
+    }
+
+    .premium__img {
+        width: 100%;
+    }
+
+    .footer__menu {
+        gap: 0;
+    }
+
+}
+
+
+@media (max-width: 795px) {
+
+    .header {
+        padding-bottom: 60px;
+    }
+
+    .header__top {
+        margin-bottom: 40px;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+
+    .text {
+        margin: 0 auto 40px;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .burger__menu {
+        display: block;
+    }
+
+    .promo__desc {
+        font-size: 18px;
+        margin-bottom: 55px;
+    }
+
+    .promo__desc b {
+        font-size: 18px;
+    }
+
+    .promo__list {
+        margin-bottom: 30px;
+    }
+
+    .promo__item {
+        width: 100%;
+    }
+
+    .promo__text {
+        margin-bottom: 30px;
+    }
+
+    .promo__bg {
+        margin-bottom: 55px;
+    }
+
+    .subdesc {
+        font-size: 18px;
+    }
+
+    .subdesc b {
+        font-size: 18px;
+    }
+
+    .party__subdesc {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 685px) {
+
+    .footer__inner {
+        justify-content: center;
+    }
+
+    .footer__menu {
+        justify-content: center;
+    }
+
+    .copy {
+        margin-bottom: 20px;
+    }
+}
