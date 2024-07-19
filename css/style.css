@@ -532,7 +532,7 @@ body {
         display: inline-block;
     }
 
-    .logo {
+    .footer__logo {
         display: none;
     }
 
@@ -549,3 +549,4 @@ body {
         padding-top: 60px;
         display: block;
     }
+}
